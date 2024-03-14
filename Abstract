@@ -1,0 +1,43 @@
+package com.vijesh;
+
+
+abstract class Addition{
+			
+abstract void add();
+			
+public void sub()
+{
+ System.out.println("Subraction");
+}
+}
+
+abstract class ImplementedMethod extends Addition{
+	
+abstract void division();
+
+public void multipy()
+{
+	System.out.println("Multiplication");
+}
+}
+
+class Method extends ImplementedMethod{
+	public void add(){
+	System.out.println("Addition");
+	}
+	public void division() {
+		System.out.println("division");
+	}
+			public static void main(String[] args) {
+				Method obj=new Method();
+				obj.add();
+				obj.sub();
+				obj.multipy();
+				obj.division();
+
+			}
+
+		}
+	
+
+
